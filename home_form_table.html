@@ -5,27 +5,79 @@
   <meta name="viewport" content="width=device-width, initial scale=1">
   <title>Form Table</title>
 <style>
+
 div.complete {
   border: 3px solid black;
-  width: 500px;
-display: block;
-padding: 5px;
-margin-left: auto;
-margin-right: auto;
-position: relative;
+  display: block;
+  padding: 8px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 520px;
+  height: 580px;
+  line-height: 7px;
 }
 
 label {
-  margin-left: 10px;
-position: absolute;
+  display: inline-block;
+  width: 200px;
+  text-align: left;
 }
 
-input {
-  margin-left: 200px;
+div.container {
+  position: relative;
+  left:0px;
+  width: 400px;
+  height: 200px;
+  top: 15px;
+}
+
+div.incon {
+  position: absolute;
+  top: 0px;
+  left: 200px;
+
 }
 
 select {
-  margin-left: 200px;
+  width: 173px;
+  height: 21px;
+}
+
+textarea {
+  width: 300px;
+  height: 150px;
+  overflow-y: scroll;
+  resize: none;
+  position: relative;
+}
+
+input.button {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+position: relative;
+bottom: 50px;
+}
+label.expe {
+  position: relative;
+  bottom: 142px;
+}
+span {
+  color: red;
+  margin-right: 2px;
+}
+
+span.inv {
+  visibility: hidden;
+}
+div.diets {
+  position: relative;
+  bottom: 60px;
+}
+
+div.expex {
+  position: relative;
+  bottom: 60px;
 }
 
   </style>
@@ -33,28 +85,30 @@ select {
 <body>
   <div class="complete">
   <form action="#" method="post">
-<label for="comp">Company:</label>
-    <input type="text" name="company" id="comp"><br><br>
 
-<label for="fname">First Name:</label>
+<label for="comp"><span>*</span>Company:</label>
+    <input type="text" name="company" id="comp"></td><br><br>
+
+<label for="fname"><span>*</span>First Name:</label>
 <input type="text" name="firstname" id="fname"><br><br>
 
-<label for="lname">Last Name:</label>
+<label for="lname"><span>*</span>Last Name:</label>
 <input type="text" name="lastname" id="lname"><br><br>
 
-<label for="emadr">Email Address:</label>
+<label for="emadr"><span>*</span>Email Address:</label>
 <input type="email" name="emailaddress" id="emadr"><br><br>
 
-<label for="titl">Title:</label>
+<label for="titl"><span>*</span>Title:</label>
 <input type="text" name="title" id="titl"><br><br>
 
-<label for="telnumb">Phone:</label>
+<label for="telnumb"><span>*</span>Phone:</label>
 <input type="number" name="telephone" id="telnumb"><br><br>
 
-<label for="canreg">Cancel Registration:</label>
+
+<label for="canreg"><span class="inv">*</span>Cancel Registration:</label>
 <input type="checkbox" name="cancelreg" checked id="canreg" value="1"><br><br>
 
-<label for="dat">252 Training Session 2010:</label>
+<label for="dat"><span>*</span>252 Training Session 2010:</label>
 <select name="date" id="dat">
   <option value="default">--Select a date--</option>
   <option value="first">12.04.2010</option>
@@ -62,8 +116,8 @@ select {
 </select><br><br>
 
 
-<label for="jobfun">Job Function:</label>
-
+<div class="container"><span>*</span>Job Function:
+<div class="incon">
 <input type="radio" name="jobfunction" value="Campaign Management">Campaign Management<br><br>
 
 <input type="radio" name="jobfunction" value="CRM Administration">CRM Administration<br><br>
@@ -73,17 +127,20 @@ select {
 <input type="radio" name="jobfunction" value="Partner">Partner<br><br>
 
 <input type="radio" name="jobfunction" value="Employee">Employee<br><br>
+</div>
+</div>
 
-
-
-
-<label for="diet">Dietary Requirements:</label>
+<div class="diets">
+<label for="diet"><span class="inv">*</span>Dietary Requirements:</label>
 <input type="text" name="dietrequirements" id="diet"><br><br>
+</div>
 
-<label for="expect">Expectations</label>
+<div class="expex">
+<label class="expe" for="expect"><span class="inv">*</span>Expectations?:</label>
 <textarea name="expectations" id="expect"></textarea><br><br>
+</div>
 
-<input type="submit" name="form" value="Submit">
+<input class="button" type="submit" name="form" value="Submit">
 </form>
 </div>
 </body>
