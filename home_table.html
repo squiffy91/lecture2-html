@@ -4,46 +4,67 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Home Table</title>
+  <style>
+
+table {
+  border-collapse: collapse;
+}
+
+td {
+  border: 1px solid black;
+  padding: 5px;
+  text-align: center;
+  font-size: 20px;
+}
+
+td.bolder {
+  font-weight: bold;
+}
+
+  </style>
 </head>
 <body>
   <table>
     <caption>Questionnaire Results</caption>
+    <thead>
     <tr>
-      <td rowspan="2" colspan="2">Question</td>
-      <td colspan="2">Women</td>
-      <td colspan="2">Men</td>
+      <td class="bolder" rowspan="2" colspan="2">Question</td>
+      <td class="bolder" colspan="2">Women</td>
+      <td class="bolder" colspan="2">Men</td>
     </tr>
 <tr>
-  <td>Yes</td>
-  <td>No</td>
-  <td>Yes</td>
-  <td>No</td>
+  <td class="bolder">Yes</td>
+  <td class="bolder">No</td>
+  <td class="bolder">Yes</td>
+  <td class="bolder">No</td>
 </tr>
+</thead>
+
 <tr>
-  <td colspan="2">Question 1</td>
+  <td class="bolder" colspan="2">Question 1</td>
   <td>42%</td>
   <td>58%</td>
   <td>61%</td>
   <td>39%</td>
 </tr>
 <tr>
-  <td colspan="2">Question 2</td>
+  <td class="bolder" colspan="2">Question 2</td>
   <td>53%</td>
   <td>47%</td>
   <td>69%</td>
   <td>31%</td>
 </tr>
 <tr>
-  <td colspan="2">Question 3</td>
+  <td class="bolder" colspan="2">Question 3</td>
   <td>26%</td>
   <td>74%</td>
   <td>51%</td>
   <td>49%</td>
 </tr>
 <tr>
-  <td colspan="2">Average</td>
-  <td>40%</td>
-  <td>60%</td>
-  <td>60%</td>
-  <td>40%</td>
+  <td class="bolder"colspan="2">Average</td>
+  <td class="bolder">40%</td>
+  <td class="bolder">60%</td>
+  <td class="bolder">60%</td>
+  <td class="bolder">40%</td>
 </tr>
