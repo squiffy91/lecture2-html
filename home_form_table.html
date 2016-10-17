@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial scale=1">
+  <title>Form Table</title>
+<style>
+div.complete {
+  border: 3px solid black;
+  width: 400px;
+display: inline-block;
+padding: 5px;
+}
+
+  </style>
+</head>
+<body>
+  <div class="complete">
+  <form action="#" method="post">
+<label for="comp">Company:</label>
+    <input type="text" name="company" id="comp"><br><br>
+
+<label for="fname">First Name:</label>
+<input type="text" name="firstname" id="fname"><br><br>
+
+<label for="lname">Last Name:</label>
+<input type="text" name="lastname" id="lname"><br><br>
+
+<label for="emadr">Email Address:</label>
+<input type="email" name="emailaddress" id="emadr"><br><br>
+
+<label for="titl">Title:</label>
+<input type="text" name="title" id="titl"><br><br>
+
+<label for="telnumb">Phone:</label>
+<input type="number" name="telephone" id="telnumb"><br><br>
+
+<label for="canreg">Cancel Registration:</label>
+<input type="checkbox" name="cancelreg" checked id="canreg" value="1"><br><br>
+
+<label for="dat">252 Training Session 2010:</label>
+<select name="date" id="dat">
+  <option value="default">--Select a date--</option>
+  <option value="first">12.04.2010</option>
+  <option value="second">16.04.2010</option>
+</select><br><br>
+
+
+<label for="jobfun">Job Function:</label>
+
+<input type="radio" name="jobfunction" value="Campaign Management">Campaign Management<br><br>
+
+<input type="radio" name="jobfunction" value="CRM Administration">CRM Administration<br><br>
+
+<input type="radio" name="jobfunction" value="Email Deployment">Email Deployment<br><br>
+
+<input type="radio" name="jobfunction" value="Partner">Partner<br><br>
+
+<input type="radio" name="jobfunction" value="Employee">Employee<br><br>
+
+
+
+
+<label for="diet">Dietary Requirements:</label>
+<input type="text" name="dietrequirements" id="diet"><br><br>
+
+<label for="expect">Expectations</label>
+<textarea name="expectations" id="expect"></textarea><br><br>
+
+<input type="submit" name="form" value="Submit">
+</form>
+</div>
+</body>
+</html>
